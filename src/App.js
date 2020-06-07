@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App main-container" style={{height:"100%"}}>
+    <div className="App main-container" style={{position:"relative", minHeight:"100vh", display:"block", paddingBottom:"420px"}}>
       <div className="flex-container" style={{backgroundColor:"blue", width:"100%", height:"50px", display:"flex"}}>
         <div className="row logo">
           <img src="images/logo.png" style={{height:"40px", width:"", textAlign:"left", marginLeft:"0px", paddingTop:"5px"}}></img>
@@ -86,19 +86,39 @@ function App() {
          </div>
       </div> 
            {/*Footer*/}
-        <div className="row flex-container" style={{backgroundColor:"blue", width:"100%", height:"100px", display:"flex"}}>
-           <div className="kenya">
-           <h5 id="f-left">VISIT US IN KENYA</h5>
-              <h6 id="s-left">Nairobi, Kenya</h6> 
-              <p id="left">
+      <div className="footer">
+      <div className="row flex-container" style={{backgroundColor:"blue", position:"absolute", bottom:"0", width:"100%", height:"170px", display:"flex"}}>
+           <div className="kenya" style={{width:"30%", height:"50px"}}>
+              <h5 id="f-left" style={{color:"red"}}>VISIT US IN KENYA</h5>
+              <h6 id="s-left" style={{color:"lightgreen"}}>Nairobi, Kenya</h6> 
+              <p id="left" style={{color:"white"}}>
                 Belgravia Center,14 Riverside drive,
                 4th floor,off Riverside Drive
                 Hanover Center,14 Riverside Drive
                 6th floor,4th Riverside Drive
-           </p>
+              </p>
               
-           </div>
+            </div>
+            <div className="Ghana" style={{width:"30%", height:"50px"}}>
+              <h5 id="f-left" style={{color:"red"}}>VISIT US IN GHANA</h5>
+              <h6 id="s-left" style={{color:"lightgreen"}}>Accra, Ghana</h6> 
+              <p id="left" style={{color:"white"}}>
+              One Airport square,Airport City,
+              8th floor
+              </p>
+              
+            </div>
+            <div className="Nigeria" style={{width:"30%", height:"50px"}}>
+              <h5 id="f-left" style={{color:"red"}}>VISIT US IN NIGERIA</h5>
+              <h6 id="s-left" style={{color:"lightgreen"}}>Lagos, Nigeria</h6> 
+              <p id="left" style={{color:"white"}}>
+              Sterling Bank Building
+              </p>
+              
+            </div>
         </div>
+      </div>
+        
     </div>
   );
 }
